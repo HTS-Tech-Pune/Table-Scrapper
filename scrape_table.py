@@ -22,7 +22,7 @@ def scrape():
 
 if __name__ == '__main__':
     scrape()
-    schedule.every(0.5).minutes.do(scrape)
+    schedule.every(5).minutes.do(scrape)
     while True:
         schedule.run_pending()
-        time.sleep(1)
+        time.sleep(5)
